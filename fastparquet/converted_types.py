@@ -36,8 +36,8 @@ DAYS_TO_MILLIS = 86400000000000
 nat = np.datetime64('NaT').view('int64')
 
 simple = {
-    parquet_thrift.Type.INT32: np.dtype('int32'),
-    parquet_thrift.Type.INT64: np.dtype('int64'),
+    parquet_thrift.Type.INT32: pd.Int32Dtype(),
+    parquet_thrift.Type.INT64: pd.Int64Dtype(),
     parquet_thrift.Type.FLOAT: np.dtype('float32'),
     parquet_thrift.Type.DOUBLE: np.dtype('float64'),
     parquet_thrift.Type.BOOLEAN: np.dtype('bool'),
